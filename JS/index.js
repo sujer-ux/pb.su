@@ -65,6 +65,8 @@ function navTabs(event) {
 //        }
 //    }
 //}
+
+
 btnActive('btn');
 
 
