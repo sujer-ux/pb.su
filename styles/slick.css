@@ -145,3 +145,94 @@
     opacity: 0.6;
     transition: opacity .2s;
 }
+.track-info {
+/*    background-color: aqua;*/
+    width: 339px;
+    margin-left: 13px;
+    height: 199px;
+    padding: 11px 10px;
+}
+
+.track-info div {
+/*    margin-bottom: 3px;*/
+}
+
+.rtype {
+    text-transform: uppercase;
+    color: #a3a3a3;
+    font-size: 19px;
+    margin-bottom: 2px;
+}
+
+.song span {
+    font-size: 27px;
+    margin-top: 0px;
+    font-weight: 600;
+    color: #eaeaea;
+    cursor: pointer;
+}
+
+.song span:hover {
+    color: white;
+}
+
+.name span {
+    color: #6C52FF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.name span:hover {
+    text-decoration: underline;
+}
+
+.views {
+    margin-top: 12px;
+    position: relative;
+    margin-left: 35px;
+}
+
+.views::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    left: -33px;
+    top: -0.4px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 56.7 56.7' style='enable-background:new 0 0 56.7 56.7;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23696969;%7D%0A%3C/style%3E%3Cpath class='st0' d='M54.4,29.2c-0.4,1.3-1.4,2.3-2.3,3.2c-3.7,4-7.7,7.5-12.6,10c-2.6,1.3-5.3,2.2-8.1,2.7c-3.5,0.5-6.9,0.1-10.3-1 c-4.3-1.5-8.1-4-11.6-6.9c-2.3-1.9-4.3-4-6.2-6.3c-1.3-1.6-1.3-3.3,0-4.8C6.9,21.8,11.1,18,16,15.2c3-1.7,6.1-2.9,9.5-3.4 c3.6-0.5,7-0.1,10.4,1.1c4.3,1.5,8,3.9,11.4,6.8c2.2,1.8,4.1,3.8,6,6c0.5,0.6,0.9,1.2,1.2,1.9C54.4,28.1,54.4,28.6,54.4,29.2z M28.4,39.5c6.1,0,11.1-5,11.1-11.1c0-6.2-5-11.2-11.1-11.2c-6.2,0-11.2,5-11.2,11.1C17.2,34.5,22.2,39.5,28.4,39.5z'/%3E%3Cpath class='st0' d='M28.4,34.3c-3.3,0-6-2.7-6-5.9c0-3.3,2.7-6,6-6s5.9,2.7,5.9,6C34.3,31.6,31.7,34.3,28.4,34.3z'/%3E%3C/svg%3E");
+/*    background-color: #696969;*/
+}
+
+.tags {
+    margin-top: 10px;
+    font-size: 17px;
+    max-width: 255px;
+    color: #a3a3a3;
+}
+
+.tags span {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.tags span:hover {
+    text-decoration: underline;
+    color: #c6c6c6;
+}
+.to-page {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #6C52FF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.to-page:hover {
+    text-decoration: underline;
+}
