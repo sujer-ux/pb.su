@@ -1,5 +1,4 @@
 nav.onclick = navTabs;
-
 function navTabs(event) {
     let id = event.target.id;
     function open(elemId) {
@@ -39,32 +38,7 @@ function navTabs(event) {
 
 
 
-//document.onclick = function(event) {
-//    let classes = [...event.target.classList];
-//    console.log('classes: ' + classes + '; ' + 'id: ' + event.target.id + '; ' + 'tag-name: ' + event.target.tagName + ' | ' + event.target);
-//}
 
-
-//nav.onmouseover = function(event) {
-//    if (event.target.classList.contains('mc')) {
-//        event.target.style.backgroundColor = '#2e2e2e';
-//    }
-//        event.target.onmouseout = function() {
-//        event.target.style.backgroundColor = null;
-//    }
-//}
-//nav.onclick = function(event) {
-//    if (event.target.classList.contains('mcAfter')) {
-//        if (!event.target.classList.contains('mc-click')) {
-//            event.target.classList.add('mc-click');
-//            event.target.childNodes[1].style.display = 'block';
-//            winCloseMc();
-//        } else {
-//            event.target.classList.remove('mc-click');
-//            event.target.childNodes[1].style.display = 'none';
-//        }
-//    }
-//}
 
 
 btnActive('btn');

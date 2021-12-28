@@ -242,3 +242,13 @@
 .to-page:hover {
     text-decoration: underline;
 }
+
+.audio {
+    z-index: 9999;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -71px;
+    opacity: 0.4;
+    display: none;
+}
