@@ -214,11 +214,13 @@
 .tags span {
     margin-right: 6px;
     cursor: pointer;
+/*    font-style: italic;*/
 }
 
 .tags span:hover {
     text-decoration: underline;
     color: #c6c6c6;
+
 }
 .to-page {
     position: absolute;

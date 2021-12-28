@@ -41,7 +41,6 @@ body {
 .wall {
     width: 100%;
     height: 2000px;
-/*    outline: 1px solid;*/
 }
 
 .slide-header {
@@ -49,10 +48,31 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-/*    background-color: #1f1f1f;*/
-    height: 35px;
-/*    text-transform: uppercase;*/
+    height: 44px;
     font-size: 18px;
     font-weight: 600;
-    color: #767676;
+    color: #cecece;
+    position: relative;
+/*    outline: 1px solid;*/
 }
+
+.static {
+    position: absolute;
+    right: 3px;
+    color: #6C52FF;
+    font-size: 14px;
+    outline: 1px solid #6C52FF;
+    padding: 0.4em 10px;
+    cursor: pointer;
+}
+
+.static:hover {
+    background-color: #6C52FF;
+    color: #000000;
+    outline: 1px solid #6C52FF;
+}
+
+
+
+
+
