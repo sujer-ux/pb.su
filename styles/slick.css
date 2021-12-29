@@ -221,6 +221,7 @@
 .tags span:hover {
     text-decoration: underline;
     color: #c6c6c6;
+    background-color: rgba(0, 0, 0, 0.09);
 
 }
 .to-page {
