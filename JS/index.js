@@ -36,22 +36,18 @@ function navTabs(event) {
 }
 
 const player = document.querySelector('.player'),
-      expBtn = player.querySelector('.play-list-btn'),
-      unExpBtn = player.querySelector('.cloase-tracklist-btn');
+      expBtn = player.querySelector('.play-list-btn');
 
-expBtn.onclick = expand;
-unExpBtn.onclick = unExpand;
+expBtn.onclick = function() {
+    if (!this.classList.contains('exp')) {
+        player.classList.add('player-full');
+        this.classList.add('exp')
+    } else {
+        player.classList.remove('player-full');
+        this.classList.remove('exp');
+    }
+};
 
-
-function expand() {
-    player.classList.add('player-full');
-    console.log(player.classList.value);
-}
-
-function unExpand() {
-    player.classList.remove('player-full');
-    console.log(player.classList.value);
-}
 
 
 
