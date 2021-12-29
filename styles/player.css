@@ -60,10 +60,13 @@
     background-color: #272727;
     border-radius: 9px;
     cursor: pointer;
+    transition: all 0.1s;
 }
 
 .play-list-btn:hover {
-    background-color: #2E2E2E;
+    background-color: #2c2c2c;
+    box-shadow: rgba(10, 10, 10, 0.15) 0px 0px 5px;
+    transition: all 0.1s;
 }
 
 .play-list-btn::after {
