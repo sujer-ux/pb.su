@@ -12,9 +12,9 @@
 }
 
 .player-full {
-    height: 70%;
-    max-height: 564px;
+    height: 675px;
     transition: all 0.4s;
+    max-height: 80%;
 }
 
 .mini-player {
