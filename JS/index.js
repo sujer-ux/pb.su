@@ -34,6 +34,34 @@ function navTabs(event) {
         }
     }
 }
+
+const player = document.querySelector('.player'),
+      expBtn = player.querySelector('.play-list-btn'),
+      unExpBtn = player.querySelector('.cloase-tracklist-btn');
+
+expBtn.onclick = expand;
+unExpBtn.onclick = unExpand;
+
+
+function expand() {
+    player.classList.add('player-full');
+    console.log(player.classList.value);
+}
+
+function unExpand() {
+    player.classList.remove('player-full');
+    console.log(player.classList.value);
+}
+
+
+
+
+
+
+
+
+
+
 btnActive('btn');
 
 
