@@ -36,7 +36,10 @@ function navTabs(event) {
 }
 
 const player = document.querySelector('.player'),
-      expBtn = player.querySelector('.play-list-btn');
+      expBtn = player.querySelector('.play-list-btn'),
+      epxPlayer = player.querySelector('.main-player'),
+      wallpaper = player.querySelector('.image-track'),
+      sticky = player.querySelector('.sticky');
 
 expBtn.onclick = function() {
     if (!this.classList.contains('exp')) {
@@ -48,6 +51,18 @@ expBtn.onclick = function() {
     }
 };
 
+
+
+
+
+epxPlayer.addEventListener('scroll', function() {
+    let eHeight = wallpaper.clientHeight,
+        scrollHeight = epxPlayer.scrollTop;
+
+//    sticky.style.transform = 'translateY(' + scrollHeight + 'px)';
+//    wallpaper.style.height = scrollHeight + 'px';
+    
+});
 
 
 
