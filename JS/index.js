@@ -56,13 +56,20 @@ expBtn.onclick = function() {
 
 epxPlayer.addEventListener('scroll', function() {
     let eHeight = 400,
-        scrollHeight = epxPlayer.scrollTop;
+        scrollHeight = epxPlayer.scrollTop,
+        setH = eHeight - scrollHeight;
+    
+    if (setH < 0) {
+        setH = 0;
+    }
+    
 
     function step() {
         sticky.style.transform = 'translateY(' + scrollHeight + 'px)';
-        wallpaper.style.height = eHeight - scrollHeight + 'px';
+        wallpaper.style.height = setH + 'px';
     }
     window.requestAnimationFrame(step);
+    console.log(setH);
 });
 
 btnActive('btn');
