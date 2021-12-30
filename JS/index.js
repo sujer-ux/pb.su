@@ -1,3 +1,10 @@
+const player = document.querySelector('.player'),
+      expBtn = player.querySelector('.play-list-btn'),
+      epxPlayer = player.querySelector('.main-player'),
+      wallpaper = player.querySelector('.image-track'),
+      sticky = player.querySelector('.sticky');
+
+
 nav.onclick = navTabs;
 function navTabs(event) {
     let id = event.target.id;
@@ -35,11 +42,6 @@ function navTabs(event) {
     }
 }
 
-const player = document.querySelector('.player'),
-      expBtn = player.querySelector('.play-list-btn'),
-      epxPlayer = player.querySelector('.main-player'),
-      wallpaper = player.querySelector('.image-track'),
-      sticky = player.querySelector('.sticky');
 
 expBtn.onclick = function() {
     if (!this.classList.contains('exp')) {
@@ -52,26 +54,16 @@ expBtn.onclick = function() {
 };
 
 
-
-
-
 epxPlayer.addEventListener('scroll', function() {
     let eHeight = 400,
         scrollHeight = epxPlayer.scrollTop;
 
-    sticky.style.transform = 'translateY(' + scrollHeight + 'px)';
-    wallpaper.style.height = eHeight - scrollHeight + 'px';
-    
+    function step() {
+        sticky.style.transform = 'translateY(' + scrollHeight + 'px)';
+        wallpaper.style.height = eHeight - scrollHeight + 'px';
+    }
+    window.requestAnimationFrame(step);
 });
-
-
-
-
-
-
-
-
-
 
 btnActive('btn');
 
