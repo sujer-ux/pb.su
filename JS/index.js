@@ -2,7 +2,8 @@ const player = document.querySelector('.player'),
       expBtn = player.querySelector('.play-list-btn'),
       epxPlayer = player.querySelector('.main-player'),
       wallpaper = player.querySelector('.image-track'),
-      sticky = player.querySelector('.sticky');
+      sticky = player.querySelector('.sticky'),
+      trackItem = player.querySelector('.track-item');
 
 
 nav.onclick = navTabs;
@@ -55,7 +56,7 @@ expBtn.onclick = function() {
 
 
 epxPlayer.addEventListener('scroll', function() {
-    let eHeight = 400,
+    let eHeight = 440,
         scrollHeight = epxPlayer.scrollTop,
         setH = eHeight - scrollHeight;
     
@@ -63,13 +64,25 @@ epxPlayer.addEventListener('scroll', function() {
         setH = 0;
     }
     
+    
+    
 
     function step() {
         sticky.style.transform = 'translateY(' + scrollHeight + 'px)';
         wallpaper.style.height = setH + 'px';
+        console.log(setH);
+        if (setH < 70) {
+            console.log('sss');
+            trackItem.classList.add('setMiniItem');
+            wallpaper.classList.add('setMinimase');
+            wallpaper.style.height = null;
+        } else {
+            wallpaper.classList.remove('setMinimase');
+            trackItem.classList.remove('setMiniItem');
+            
+        }
     }
     window.requestAnimationFrame(step);
-    console.log(setH);
 });
 
 btnActive('btn');
