@@ -56,11 +56,11 @@ expBtn.onclick = function() {
 
 
 epxPlayer.addEventListener('scroll', function() {
-    let eHeight = wallpaper.clientHeight,
+    let eHeight = 400,
         scrollHeight = epxPlayer.scrollTop;
 
-//    sticky.style.transform = 'translateY(' + scrollHeight + 'px)';
-//    wallpaper.style.height = scrollHeight + 'px';
+    sticky.style.transform = 'translateY(' + scrollHeight + 'px)';
+    wallpaper.style.height = eHeight - scrollHeight + 'px';
     
 });
 
