@@ -63,9 +63,6 @@ epxPlayer.addEventListener('scroll', function() {
     if (setH < 0) {
         setH = 0;
     }
-    
-    
-    
 
     function step() {
         sticky.style.transform = 'translateY(' + scrollHeight + 'px)';
